@@ -1,3 +1,4 @@
+## This is the cononical repo for TiCalabash. This fork **is active**
 ## Notice: You must have titanium npm package installed. `npm install -g titanium` . The appc npm package is not compatible.
 
 # TiCalabash Package
