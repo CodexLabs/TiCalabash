@@ -1,15 +1,29 @@
 /*jslint node: true */
 'use strict';
 
-var exec = require('../lib/exec'),
-    i18n = require('../lib/i18n'),
-    fs = require('fs'),
-    path = require('path'),
-    appDir = path.dirname(require.main.filename);
+var appc = require('node-appc'),
+	__ = appc.i18n(__dirname).__,
+	afs = appc.fs,
+	fs = require('fs'),
+	path = require('path'),
+  exec = require('../lib/exec'),
+  i18n = require('../lib/i18n'),
+  appDir = path.dirname(require.main.filename);
+
+	// if a platform is not in this map, then we just print the capitalized platform name
+	platformNames = {
+		android: 'Android',
+		iphone: 'iPhone',
+		ios: 'iOS'
+	};
+
+
 /** command description. */
 exports.cliVersion = '>=3.2';
 exports.title = 'Build w/Calabash';
-exports.desc = 'Builds a project and injects the Calabash framework';
+/** Module command description. */
+exports.desc = __('Builds a project and injects the Calabash framework');
+
 /**
  * Returns the configuration for the  command.
  * @param {Object} logger - The logger instance

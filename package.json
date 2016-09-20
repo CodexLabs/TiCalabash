@@ -1,6 +1,6 @@
 {
   "name": "ticalabash",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A wrapper for the Calabash testing framework for use with Titanium Mobile",
   "scripts": {
     "postinstall": "node install",
