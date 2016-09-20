@@ -1,6 +1,6 @@
 {
   "name": "ticalabash",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "description": "A wrapper for the Calabash testing framework for use with Titanium Mobile",
   "scripts": {
     "postinstall": "node install",
@@ -18,10 +18,7 @@
     "android"
   ],
   "maintainers": [
-    {
-      "name": "Matt Apperson",
-      "email": "matt@appersonlabs.com"
-    },
+
     {
       "name": "Andrew McElroy",
       "email": "amcelroy@codexlabs.com"
@@ -31,7 +28,11 @@
     {
       "name": "Matthias Benkort",
       "email": "matthias.benkort@gmail.com"
-    }
+    },
+    {
+        "name": "Matt Apperson",
+        "email": "matt@appersonlabs.com"
+    },
   ],
   "license": "MIT",
   "bugs": {
